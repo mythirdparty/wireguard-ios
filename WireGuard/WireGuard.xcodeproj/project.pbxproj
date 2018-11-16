@@ -10,7 +10,7 @@
 		6BB8400421892C920003598F /* CopyableLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8400321892C920003598F /* CopyableLabelTableViewCell.swift */; };
 		6F0068572191AFD200419BE9 /* ScrollableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0068562191AFD200419BE9 /* ScrollableLabel.swift */; };
 		6F5D0C1D218352EF000F85AD /* WireGuardPacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C1C218352EF000F85AD /* WireGuardPacketTunnelProvider.swift */; };
-		6F5D0C22218352EF000F85AD /* WireGuard iOS Network Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F5D0C1A218352EF000F85AD /* WireGuard iOS Network Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F5D0C22218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
 		6F628C3F217F3413003482A3 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3E217F3413003482A3 /* DNSServer.swift */; };
 		6F628C41217F47DB003482A3 /* TunnelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */; };
@@ -79,7 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6F5D0C22218352EF000F85AD /* WireGuard iOS Network Extension.appex in Embed App Extensions */,
+				6F5D0C22218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,16 +90,16 @@
 		6BB8400321892C920003598F /* CopyableLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyableLabelTableViewCell.swift; sourceTree = "<group>"; };
 		6F0068562191AFD200419BE9 /* ScrollableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLabel.swift; sourceTree = "<group>"; };
 		6F5D0C1421832391000F85AD /* DNSResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
-		6F5D0C1A218352EF000F85AD /* WireGuard iOS Network Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard iOS Network Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuardNetworkExtension-iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5D0C1C218352EF000F85AD /* WireGuardPacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardPacketTunnelProvider.swift; sourceTree = "<group>"; };
 		6F5D0C1E218352EF000F85AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardNetworkExtension.entitlements; sourceTree = "<group>"; };
-		6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardNetworkExtension_iOS.entitlements; sourceTree = "<group>"; };
+		6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F5D0C472183C6A3000F85AD /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
 		6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
 		6F628C3E217F3413003482A3 /* DNSServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
 		6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelDetailTableViewController.swift; sourceTree = "<group>"; };
-		6F689999218043390012E523 /* WireGuard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuard-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F689999218043390012E523 /* WireGuard-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuard-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F6899A42180447E0012E523 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
 		6F6899A52180447E0012E523 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
 		6F6899A7218044FC0012E523 /* Curve25519.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve25519.swift; sourceTree = "<group>"; };
@@ -131,13 +131,13 @@
 		6FDEF8072187442100D8FBF6 /* WgQuickConfigFileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WgQuickConfigFileWriter.swift; sourceTree = "<group>"; };
 		6FE254FA219C10800028284D /* ZipImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipImporter.swift; sourceTree = "<group>"; };
 		6FE254FE219C60290028284D /* ZipExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipExporter.swift; sourceTree = "<group>"; };
-		6FF4AC14211EC46F002C96EB /* WireGuard iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WireGuard iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF4AC14211EC46F002C96EB /* WireGuard-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WireGuard-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF4AC1E211EC472002C96EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF4AC21211EC472002C96EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FF4AC23211EC472002C96EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF4AC2B211EC776002C96EB /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Config/Config.xcconfig; sourceTree = "<group>"; };
 		6FF4AC462120B9E0002C96EB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		6FF4AC482120B9E0002C96EB /* WireGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuard.entitlements; sourceTree = "<group>"; };
+		6FF4AC482120B9E0002C96EB /* WireGuard_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuard_iOS.entitlements; sourceTree = "<group>"; };
 		6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
 		6FFA5D9F21958ECC0001E2F7 /* ErrorNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
 		6FFA5DA32197085D0001E2F7 /* ActivateOnDemandSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateOnDemandSetting.swift; sourceTree = "<group>"; };
@@ -162,15 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension */ = {
+		6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6F943C14219EFD11000C3485 /* PacketTunnelProvider.swift */,
 				6F5D0C1E218352EF000F85AD /* Info.plist */,
-				6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension.entitlements */,
-				6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-Bridging-Header.h */,
+				6F5D0C1F218352EF000F85AD /* WireGuardNetworkExtension_iOS.entitlements */,
+				6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-iOS-Bridging-Header.h */,
 			);
-			path = WireGuardNetworkExtension;
+			path = "WireGuardNetworkExtension-iOS";
 			sourceTree = "<group>";
 		};
 		6F6899A32180445A0012E523 /* Crypto */ = {
@@ -325,8 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				6F943C11219EFBCA000C3485 /* CrossPlatform */,
-				6FF4AC16211EC46F002C96EB /* WireGuard */,
-				6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension */,
+				6FF4AC16211EC46F002C96EB /* WireGuard-iOS */,
+				6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension-iOS */,
 				6FF4AC15211EC46F002C96EB /* Products */,
 				6FF4AC452120B9E0002C96EB /* Frameworks */,
 			);
@@ -335,26 +335,26 @@
 		6FF4AC15211EC46F002C96EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FF4AC14211EC46F002C96EB /* WireGuard iOS App.app */,
-				6F5D0C1A218352EF000F85AD /* WireGuard iOS Network Extension.appex */,
+				6FF4AC14211EC46F002C96EB /* WireGuard-iOS.app */,
+				6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FF4AC16211EC46F002C96EB /* WireGuard */ = {
+		6FF4AC16211EC46F002C96EB /* WireGuard-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6F919ED3218C65C50023B400 /* Resources */,
 				6F943C16219EFD5B000C3485 /* ViewModel */,
 				6F7774DD217181B1006A79B3 /* UI */,
-				6FF4AC482120B9E0002C96EB /* WireGuard.entitlements */,
+				6FF4AC482120B9E0002C96EB /* WireGuard_iOS.entitlements */,
 				6FF4AC1E211EC472002C96EB /* Assets.xcassets */,
 				6FF4AC20211EC472002C96EB /* LaunchScreen.storyboard */,
 				6FF4AC23211EC472002C96EB /* Info.plist */,
 				6FF4AC2B211EC776002C96EB /* Config.xcconfig */,
-				6F689999218043390012E523 /* WireGuard-Bridging-Header.h */,
+				6F689999218043390012E523 /* WireGuard-iOS-Bridging-Header.h */,
 			);
-			path = WireGuard;
+			path = "WireGuard-iOS";
 			sourceTree = "<group>";
 		};
 		6FF4AC452120B9E0002C96EB /* Frameworks */ = {
@@ -386,9 +386,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		6F5D0C19218352EF000F85AD /* WireGuard iOS Network Extension */ = {
+		6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "WireGuard iOS Network Extension" */;
+			buildConfigurationList = 6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "WireGuardNetworkExtension-iOS" */;
 			buildPhases = (
 				6F5D0C16218352EF000F85AD /* Sources */,
 				6F5D0C17218352EF000F85AD /* Frameworks */,
@@ -399,14 +399,14 @@
 			dependencies = (
 				6FDEF7E221846C0000D8FBF6 /* PBXTargetDependency */,
 			);
-			name = "WireGuard iOS Network Extension";
+			name = "WireGuardNetworkExtension-iOS";
 			productName = WireGuardNetworkExtension;
-			productReference = 6F5D0C1A218352EF000F85AD /* WireGuard iOS Network Extension.appex */;
+			productReference = 6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		6FF4AC13211EC46F002C96EB /* WireGuard iOS App */ = {
+		6FF4AC13211EC46F002C96EB /* WireGuard-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "WireGuard iOS App" */;
+			buildConfigurationList = 6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "WireGuard-iOS" */;
 			buildPhases = (
 				6B87860E2189532500C099FB /* Extract wireguard-go Version */,
 				6FF4AC10211EC46F002C96EB /* Sources */,
@@ -419,9 +419,9 @@
 			dependencies = (
 				6F5D0C21218352EF000F85AD /* PBXTargetDependency */,
 			);
-			name = "WireGuard iOS App";
+			name = "WireGuard-iOS";
 			productName = WireGuard;
-			productReference = 6FF4AC14211EC46F002C96EB /* WireGuard iOS App.app */;
+			productReference = 6FF4AC14211EC46F002C96EB /* WireGuard-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -465,8 +465,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FF4AC13211EC46F002C96EB /* WireGuard iOS App */,
-				6F5D0C19218352EF000F85AD /* WireGuard iOS Network Extension */,
+				6FF4AC13211EC46F002C96EB /* WireGuard-iOS */,
+				6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */,
 				6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge */,
 			);
 		};
@@ -575,7 +575,7 @@
 /* Begin PBXTargetDependency section */
 		6F5D0C21218352EF000F85AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6F5D0C19218352EF000F85AD /* WireGuard iOS Network Extension */;
+			target = 6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */;
 			targetProxy = 6F5D0C20218352EF000F85AD /* PBXContainerItemProxy */;
 		};
 		6FDEF7E221846C0000D8FBF6 /* PBXTargetDependency */ = {
@@ -601,10 +601,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WireGuardNetworkExtension/WireGuardNetworkExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = WireGuardNetworkExtension/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WireGuardNetworkExtension-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID).network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension/WireGuardNetworkExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -624,10 +624,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WireGuardNetworkExtension/WireGuardNetworkExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = WireGuardNetworkExtension/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WireGuardNetworkExtension-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID).network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension/WireGuardNetworkExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -792,9 +792,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WireGuard/WireGuard.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "WireGuard-iOS/WireGuard_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WireGuard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WireGuard-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,7 +802,7 @@
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard/WireGuard-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-iOS/WireGuard-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -812,9 +812,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WireGuard/WireGuard.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "WireGuard-iOS/WireGuard_iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WireGuard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WireGuard-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -822,7 +822,7 @@
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard/WireGuard-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-iOS/WireGuard-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -830,7 +830,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "WireGuard iOS Network Extension" */ = {
+		6F5D0C25218352EF000F85AD /* Build configuration list for PBXNativeTarget "WireGuardNetworkExtension-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F5D0C23218352EF000F85AD /* Debug */,
@@ -857,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "WireGuard iOS App" */ = {
+		6FF4AC26211EC472002C96EB /* Build configuration list for PBXNativeTarget "WireGuard-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FF4AC27211EC472002C96EB /* Debug */,
