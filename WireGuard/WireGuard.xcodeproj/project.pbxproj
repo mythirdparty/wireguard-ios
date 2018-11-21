@@ -35,6 +35,8 @@
 		6FD1A2D521A59E8700CF36EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1A2D421A59E8700CF36EF /* AppDelegate.swift */; };
 		6FD1A2D721A59E8A00CF36EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1A2D621A59E8A00CF36EF /* Assets.xcassets */; };
 		6FD1A2DA21A59E8A00CF36EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1A2D821A59E8A00CF36EF /* MainMenu.xib */; };
+		6FD1A2E721A5D9E000CF36EF /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1A2E621A5D9E000CF36EF /* PacketTunnelProvider.swift */; };
+		6FD1A2EC21A5D9E000CF36EF /* WireGuardNetworkExtension-macOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6FD1A2E421A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6FDEF7E421846C1A00D8FBF6 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDEF7E321846C1A00D8FBF6 /* libwg-go.a */; };
 		6FDEF7E62185EFB200D8FBF6 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */; };
 		6FDEF7FB21863B6100D8FBF6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7F621863B6100D8FBF6 /* unzip.c */; };
@@ -67,6 +69,13 @@
 			remoteGlobalIDString = 6F5D0C19218352EF000F85AD;
 			remoteInfo = WireGuardNetworkExtension;
 		};
+		6FD1A2EA21A5D9E000CF36EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF4AC0C211EC46F002C96EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD1A2E321A5D9DF00CF36EF;
+			remoteInfo = "WireGuardNetworkExtension-macOS";
+		};
 		6FDEF7E121846C0000D8FBF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6FF4AC0C211EC46F002C96EB /* Project object */;
@@ -84,6 +93,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				6F5D0C22218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD1A2F021A5D9E000CF36EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6FD1A2EC21A5D9E000CF36EF /* WireGuardNetworkExtension-macOS.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +149,10 @@
 		6FD1A2D921A59E8A00CF36EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6FD1A2DB21A59E8A00CF36EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD1A2DC21A59E8A00CF36EF /* WireGuard_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuard_macOS.entitlements; sourceTree = "<group>"; };
+		6FD1A2E421A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuardNetworkExtension-macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD1A2E621A5D9E000CF36EF /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		6FD1A2E821A5D9E000CF36EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD1A2E921A5D9E000CF36EF /* WireGuardNetworkExtension_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardNetworkExtension_macOS.entitlements; sourceTree = "<group>"; };
 		6FDEF7E321846C1A00D8FBF6 /* libwg-go.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libwg-go.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		6FDEF7F621863B6100D8FBF6 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
@@ -163,6 +187,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6FD1A2CF21A59E8700CF36EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD1A2E121A5D9DF00CF36EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,6 +371,16 @@
 			path = "WireGuard-macOS";
 			sourceTree = "<group>";
 		};
+		6FD1A2E521A5D9E000CF36EF /* WireGuardNetworkExtension-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1A2E621A5D9E000CF36EF /* PacketTunnelProvider.swift */,
+				6FD1A2E821A5D9E000CF36EF /* Info.plist */,
+				6FD1A2E921A5D9E000CF36EF /* WireGuardNetworkExtension_macOS.entitlements */,
+			);
+			path = "WireGuardNetworkExtension-macOS";
+			sourceTree = "<group>";
+		};
 		6FDEF7E72186320E00D8FBF6 /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +421,7 @@
 				6FF4AC16211EC46F002C96EB /* WireGuard-iOS */,
 				6F5D0C1B218352EF000F85AD /* WireGuardNetworkExtension-iOS */,
 				6FD1A2D321A59E8700CF36EF /* WireGuard-macOS */,
+				6FD1A2E521A5D9E000CF36EF /* WireGuardNetworkExtension-macOS */,
 				6FF4AC15211EC46F002C96EB /* Products */,
 				6FF4AC452120B9E0002C96EB /* Frameworks */,
 			);
@@ -391,6 +433,7 @@
 				6FF4AC14211EC46F002C96EB /* WireGuard-iOS.app */,
 				6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */,
 				6FD1A2D221A59E8700CF36EF /* WireGuard-macOS.app */,
+				6FD1A2E421A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,15 +509,34 @@
 				6FD1A2CE21A59E8700CF36EF /* Sources */,
 				6FD1A2CF21A59E8700CF36EF /* Frameworks */,
 				6FD1A2D021A59E8700CF36EF /* Resources */,
+				6FD1A2F021A5D9E000CF36EF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6FD1A2EB21A5D9E000CF36EF /* PBXTargetDependency */,
 			);
 			name = "WireGuard-macOS";
 			productName = "WireGuard-macOS";
 			productReference = 6FD1A2D221A59E8700CF36EF /* WireGuard-macOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6FD1A2E321A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD1A2EF21A5D9E000CF36EF /* Build configuration list for PBXNativeTarget "WireGuardNetworkExtension-macOS" */;
+			buildPhases = (
+				6FD1A2E021A5D9DF00CF36EF /* Sources */,
+				6FD1A2E121A5D9DF00CF36EF /* Frameworks */,
+				6FD1A2E221A5D9DF00CF36EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WireGuardNetworkExtension-macOS";
+			productName = "WireGuardNetworkExtension-macOS";
+			productReference = 6FD1A2E421A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		6FF4AC13211EC46F002C96EB /* WireGuard-iOS */ = {
 			isa = PBXNativeTarget;
@@ -513,6 +575,9 @@
 					6FD1A2D121A59E8700CF36EF = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					6FD1A2E321A5D9DF00CF36EF = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					6FDEF7DD21846BC100D8FBF6 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -544,6 +609,7 @@
 				6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */,
 				6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge-iOS */,
 				6FD1A2D121A59E8700CF36EF /* WireGuard-macOS */,
+				6FD1A2E321A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -562,6 +628,13 @@
 			files = (
 				6FD1A2D721A59E8A00CF36EF /* Assets.xcassets in Resources */,
 				6FD1A2DA21A59E8A00CF36EF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD1A2E221A5D9DF00CF36EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +702,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FD1A2E021A5D9DF00CF36EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD1A2E721A5D9E000CF36EF /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6FF4AC10211EC46F002C96EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +752,11 @@
 			isa = PBXTargetDependency;
 			target = 6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */;
 			targetProxy = 6F5D0C20218352EF000F85AD /* PBXContainerItemProxy */;
+		};
+		6FD1A2EB21A5D9E000CF36EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FD1A2E321A5D9DF00CF36EF /* WireGuardNetworkExtension-macOS */;
+			targetProxy = 6FD1A2EA21A5D9E000CF36EF /* PBXContainerItemProxy */;
 		};
 		6FDEF7E221846C0000D8FBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -747,6 +833,7 @@
 		6FD1A2DE21A59E8A00CF36EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = "WireGuard-macOS/WireGuard_macOS.entitlements";
@@ -775,6 +862,7 @@
 		6FD1A2DF21A59E8A00CF36EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = "WireGuard-macOS/WireGuard_macOS.entitlements";
@@ -793,6 +881,59 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_MACOS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		6FD1A2ED21A5D9E000CF36EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "WireGuardNetworkExtension-macOS/WireGuardNetworkExtension_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R2NV2FHE22;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "WireGuardNetworkExtension-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wireguard.WireGuard.macos.roop.WireGuardNetworkExtension-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		6FD1A2EE21A5D9E000CF36EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "WireGuardNetworkExtension-macOS/WireGuardNetworkExtension_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R2NV2FHE22;
+				INFOPLIST_FILE = "WireGuardNetworkExtension-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wireguard.WireGuard.macos.roop.WireGuardNetworkExtension-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -999,6 +1140,15 @@
 			buildConfigurations = (
 				6FD1A2DE21A59E8A00CF36EF /* Debug */,
 				6FD1A2DF21A59E8A00CF36EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD1A2EF21A5D9E000CF36EF /* Build configuration list for PBXNativeTarget "WireGuardNetworkExtension-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD1A2ED21A5D9E000CF36EF /* Debug */,
+				6FD1A2EE21A5D9E000CF36EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
