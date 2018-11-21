@@ -394,17 +394,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge */ = {
+		6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge-iOS */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 6FDEF7E021846BC700D8FBF6 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */;
+			buildConfigurationList = 6FDEF7E021846BC700D8FBF6 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge-iOS" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
 			buildWorkingDirectory = "$(PROJECT_DIR)/../wireguard-go-bridge";
 			dependencies = (
 			);
-			name = WireGuardGoBridge;
+			name = "WireGuardGoBridge-iOS";
 			passBuildSettingsInEnvironment = 1;
 			productName = WireGuardGoBridge;
 		};
@@ -492,7 +492,7 @@
 			targets = (
 				6FF4AC13211EC46F002C96EB /* WireGuard-iOS */,
 				6F5D0C19218352EF000F85AD /* WireGuardNetworkExtension-iOS */,
-				6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge */,
+				6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -606,7 +606,7 @@
 		};
 		6FDEF7E221846C0000D8FBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge */;
+			target = 6FDEF7DD21846BC100D8FBF6 /* WireGuardGoBridge-iOS */;
 			targetProxy = 6FDEF7E121846C0000D8FBF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -865,7 +865,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FDEF7E021846BC700D8FBF6 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */ = {
+		6FDEF7E021846BC700D8FBF6 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FDEF7DE21846BC100D8FBF6 /* Debug */,
