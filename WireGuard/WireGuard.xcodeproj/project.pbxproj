@@ -192,21 +192,17 @@
 			path = ConfigFile;
 			sourceTree = "<group>";
 		};
-		6F7774DD217181B1006A79B3 /* UI */ = {
+		6F7774DD217181B1006A79B3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6BB8400321892C920003598F /* CopyableLabelTableViewCell.swift */,
-				6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */,
-				6F7774E0217181B1006A79B3 /* AppDelegate.swift */,
 				6F7774DF217181B1006A79B3 /* MainViewController.swift */,
 				6F7774E321718281006A79B3 /* TunnelsListTableViewController.swift */,
 				6F7774F221774263006A79B3 /* TunnelEditTableViewController.swift */,
 				6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */,
+				6FDEF7E52185EFAF00D8FBF6 /* QRScanViewController.swift */,
 				6FDEF805218725D200D8FBF6 /* SettingsTableViewController.swift */,
-				6F919EC2218A2AE90023B400 /* ErrorPresenter.swift */,
-				6F0068562191AFD200419BE9 /* ScrollableLabel.swift */,
 			);
-			path = UI;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		6F7774E6217201E0006A79B3 /* Model */ = {
@@ -298,6 +294,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		6FD1A2C821A59A9700CF36EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BB8400321892C920003598F /* CopyableLabelTableViewCell.swift */,
+				6F0068562191AFD200419BE9 /* ScrollableLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6FDEF7E72186320E00D8FBF6 /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,8 +358,11 @@
 		6FF4AC16211EC46F002C96EB /* WireGuard-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6F7774E0217181B1006A79B3 /* AppDelegate.swift */,
+				6F919EC2218A2AE90023B400 /* ErrorPresenter.swift */,
+				6F7774DD217181B1006A79B3 /* ViewControllers */,
+				6FD1A2C821A59A9700CF36EF /* Views */,
 				6F919ED3218C65C50023B400 /* Resources */,
-				6F7774DD217181B1006A79B3 /* UI */,
 				6FF4AC482120B9E0002C96EB /* WireGuard_iOS.entitlements */,
 				6FF4AC1E211EC472002C96EB /* Assets.xcassets */,
 				6FF4AC20211EC472002C96EB /* LaunchScreen.storyboard */,
