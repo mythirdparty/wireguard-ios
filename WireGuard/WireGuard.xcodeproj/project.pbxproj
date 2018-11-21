@@ -638,7 +638,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID).network-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_IOS).network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension-iOS-Bridging-Header.h";
@@ -660,7 +660,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID).network-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_IOS).network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-iOS/WireGuardNetworkExtension-iOS-Bridging-Header.h";
@@ -826,7 +826,7 @@
 					"@executable_path/Frameworks",
 				);
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_IOS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-iOS/WireGuard-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -846,7 +846,7 @@
 					"@executable_path/Frameworks",
 				);
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_IOS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-iOS/WireGuard-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

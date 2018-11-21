@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(VERSION_NAME)</string>
+	<string>$(VERSION_NAME_IOS)</string>
 	<key>CFBundleVersion</key>
-	<string>$(VERSION_ID)</string>
+	<string>$(VERSION_ID_IOS)</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
