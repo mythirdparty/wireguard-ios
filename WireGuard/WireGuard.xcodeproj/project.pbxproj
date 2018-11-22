@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		6BB8400421892C920003598F /* CopyableLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8400321892C920003598F /* CopyableLabelTableViewCell.swift */; };
 		6F0068572191AFD200419BE9 /* ScrollableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0068562191AFD200419BE9 /* ScrollableLabel.swift */; };
+		6F4540E721A6D3EA00C30FF6 /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774EE21722D97006A79B3 /* TunnelsManager.swift */; };
+		6F4540E821A6D3EA00C30FF6 /* ActivateOnDemandSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5DA32197085D0001E2F7 /* ActivateOnDemandSetting.swift */; };
+		6F4540E921A6D3EA00C30FF6 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
+		6F4540EA21A6D3EA00C30FF6 /* ZipImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE254FA219C10800028284D /* ZipImporter.swift */; };
+		6F4540EB21A6D3EA00C30FF6 /* ZipExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE254FE219C60290028284D /* ZipExporter.swift */; };
+		6F4540EC21A6D3EA00C30FF6 /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF801218646B900D8FBF6 /* ZipArchive.swift */; };
+		6F4540ED21A6D3EA00C30FF6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7FF21863C0100D8FBF6 /* ioapi.c */; };
+		6F4540EE21A6D3EA00C30FF6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7F621863B6100D8FBF6 /* unzip.c */; };
+		6F4540EF21A6D3EA00C30FF6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF7F721863B6100D8FBF6 /* zip.c */; };
+		6F4540F021A6D3EA00C30FF6 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F6899A52180447E0012E523 /* x25519.c */; };
+		6F4540F121A6D3EA00C30FF6 /* Curve25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6899A7218044FC0012E523 /* Curve25519.swift */; };
+		6F4540F221A6D3EA00C30FF6 /* WgQuickConfigFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6899AB218099F00012E523 /* WgQuickConfigFileParser.swift */; };
+		6F4540F321A6D3EA00C30FF6 /* WgQuickConfigFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDEF8072187442100D8FBF6 /* WgQuickConfigFileWriter.swift */; };
+		6F4540F421A6D3EA00C30FF6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E72172020C006A79B3 /* Configuration.swift */; };
+		6F4540F521A6D3EA00C30FF6 /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E9217229DB006A79B3 /* IPAddressRange.swift */; };
+		6F4540F621A6D3EA00C30FF6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F693A552179E556008551C1 /* Endpoint.swift */; };
+		6F4540F721A6D3EA00C30FF6 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3E217F3413003482A3 /* DNSServer.swift */; };
+		6F4540F821A6D3EA00C30FF6 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */; };
 		6F5D0C1D218352EF000F85AD /* WireGuardPacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C1C218352EF000F85AD /* WireGuardPacketTunnelProvider.swift */; };
 		6F5D0C22218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
@@ -728,6 +746,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4540E721A6D3EA00C30FF6 /* TunnelsManager.swift in Sources */,
+				6F4540E821A6D3EA00C30FF6 /* ActivateOnDemandSetting.swift in Sources */,
+				6F4540E921A6D3EA00C30FF6 /* TunnelViewModel.swift in Sources */,
+				6F4540EA21A6D3EA00C30FF6 /* ZipImporter.swift in Sources */,
+				6F4540EB21A6D3EA00C30FF6 /* ZipExporter.swift in Sources */,
+				6F4540EC21A6D3EA00C30FF6 /* ZipArchive.swift in Sources */,
+				6F4540ED21A6D3EA00C30FF6 /* ioapi.c in Sources */,
+				6F4540EE21A6D3EA00C30FF6 /* unzip.c in Sources */,
+				6F4540EF21A6D3EA00C30FF6 /* zip.c in Sources */,
+				6F4540F021A6D3EA00C30FF6 /* x25519.c in Sources */,
+				6F4540F121A6D3EA00C30FF6 /* Curve25519.swift in Sources */,
+				6F4540F221A6D3EA00C30FF6 /* WgQuickConfigFileParser.swift in Sources */,
+				6F4540F321A6D3EA00C30FF6 /* WgQuickConfigFileWriter.swift in Sources */,
+				6F4540F421A6D3EA00C30FF6 /* Configuration.swift in Sources */,
+				6F4540F521A6D3EA00C30FF6 /* IPAddressRange.swift in Sources */,
+				6F4540F621A6D3EA00C30FF6 /* Endpoint.swift in Sources */,
+				6F4540F721A6D3EA00C30FF6 /* DNSServer.swift in Sources */,
+				6F4540F821A6D3EA00C30FF6 /* NETunnelProviderProtocol+Extension.swift in Sources */,
 				6FD1A2D521A59E8700CF36EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
