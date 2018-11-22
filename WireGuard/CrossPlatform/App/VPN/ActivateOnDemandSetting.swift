@@ -10,9 +10,14 @@ struct ActivateOnDemandSetting {
 
 enum ActivateOnDemandOption {
     case none // Valid only when isActivateOnDemandEnabled is false
-    case useOnDemandOverWifiOrCellular
     case useOnDemandOverWifiOnly
+    #if os(iOS)
+    case useOnDemandOverWifiOrCellular
     case useOnDemandOverCellularOnly
+    #elseif os(OSX)
+    case useOnDemandOverWifiOrEthernet
+    case useOnDemandOverEthernetOnly
+    #endif
 }
 
 extension ActivateOnDemandSetting {
@@ -24,6 +29,7 @@ extension ActivateOnDemandSetting {
         switch (activateOnDemandOption) {
         case .none:
             rules = nil
+        #if os(iOS)
         case .useOnDemandOverWifiOrCellular:
             rules = [connectRule]
         case .useOnDemandOverWifiOnly:
@@ -34,6 +40,18 @@ extension ActivateOnDemandSetting {
             connectRule.interfaceTypeMatch = .cellular
             disconnectRule.interfaceTypeMatch = .wiFi
             rules = [connectRule, disconnectRule]
+        #elseif os(OSX)
+        case .useOnDemandOverWifiOrEthernet:
+            rules = [connectRule]
+        case .useOnDemandOverWifiOnly:
+            connectRule.interfaceTypeMatch = .wiFi
+            disconnectRule.interfaceTypeMatch = .ethernet
+            rules = [connectRule, disconnectRule]
+        case .useOnDemandOverEthernetOnly:
+            connectRule.interfaceTypeMatch = .ethernet
+            disconnectRule.interfaceTypeMatch = .wiFi
+            rules = [connectRule, disconnectRule]
+        #endif
         }
         tunnelProviderManager.onDemandRules = rules
     }
@@ -44,6 +62,7 @@ extension ActivateOnDemandSetting {
         switch (rules.count) {
         case 0:
             activateOnDemandOption = .none
+        #if os(iOS)
         case 1:
             let rule = rules[0]
             precondition(rule.action == .connect)
@@ -58,6 +77,22 @@ extension ActivateOnDemandSetting {
             } else {
                 fatalError("Unexpected onDemandRules set on tunnel provider manager")
             }
+        #elseif os(OSX)
+        case 1:
+            let rule = rules[0]
+            precondition(rule.action == .connect)
+            activateOnDemandOption = .useOnDemandOverWifiOrEthernet
+        case 2:
+            let connectRule = rules.first(where: { $0.action == .connect })!
+            let disconnectRule = rules.first(where: { $0.action == .disconnect })!
+            if (connectRule.interfaceTypeMatch == .wiFi && disconnectRule.interfaceTypeMatch == .ethernet) {
+                activateOnDemandOption = .useOnDemandOverWifiOnly
+            } else if (connectRule.interfaceTypeMatch == .ethernet && disconnectRule.interfaceTypeMatch == .wiFi) {
+                activateOnDemandOption = .useOnDemandOverEthernetOnly
+            } else {
+                fatalError("Unexpected onDemandRules set on tunnel provider manager")
+            }
+        #endif
         default:
             fatalError("Unexpected number of onDemandRules set on tunnel provider manager")
         }
