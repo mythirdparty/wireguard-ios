@@ -156,6 +156,7 @@
 		6F5D0C3421839E37000F85AD /* WireGuardNetworkExtension-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F5D0C472183C6A3000F85AD /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
 		6F6081A821A6DDC60081DEBA /* WireGuard-macOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WireGuard-macOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F61866A21AE73FF0072BB18 /* WireGuardNetworkExtension-macOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
 		6F628C3E217F3413003482A3 /* DNSServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
 		6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelDetailTableViewController.swift; sourceTree = "<group>"; };
@@ -416,6 +417,7 @@
 				6FD1A2E621A5D9E000CF36EF /* PacketTunnelProvider.swift */,
 				6FD1A2E821A5D9E000CF36EF /* Info.plist */,
 				6FD1A2E921A5D9E000CF36EF /* WireGuardNetworkExtension_macOS.entitlements */,
+				6F61866A21AE73FF0072BB18 /* WireGuardNetworkExtension-macOS-Bridging-Header.h */,
 			);
 			path = "WireGuardNetworkExtension-macOS";
 			sourceTree = "<group>";
@@ -1004,6 +1006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-macOS/WireGuardNetworkExtension-macOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -1029,6 +1032,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireGuardNetworkExtension-macOS/WireGuardNetworkExtension-macOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
