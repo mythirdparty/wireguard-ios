@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright © 2018 WireGuard LLC. All Rights Reserved.
 
-import UIKit
+import Foundation
 
 class TunnelViewModel {
 
