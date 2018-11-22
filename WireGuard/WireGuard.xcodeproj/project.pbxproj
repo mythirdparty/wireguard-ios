@@ -29,6 +29,15 @@
 		6F4540F821A6D3EA00C30FF6 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */; };
 		6F5D0C1D218352EF000F85AD /* WireGuardPacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C1C218352EF000F85AD /* WireGuardPacketTunnelProvider.swift */; };
 		6F5D0C22218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F5D0C1A218352EF000F85AD /* WireGuardNetworkExtension-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F5FB77E21A6EA9B0045F833 /* WireGuardPacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C1C218352EF000F85AD /* WireGuardPacketTunnelProvider.swift */; };
+		6F5FB77F21A6EA9B0045F833 /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C472183C6A3000F85AD /* PacketTunnelSettingsGenerator.swift */; };
+		6F5FB78021A6EA9B0045F833 /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D0C1421832391000F85AD /* DNSResolver.swift */; };
+		6F5FB78121A6EA9B0045F833 /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D9F21958ECC0001E2F7 /* ErrorNotifier.swift */; };
+		6F5FB78221A6EA9B0045F833 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E72172020C006A79B3 /* Configuration.swift */; };
+		6F5FB78321A6EA9B0045F833 /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7774E9217229DB006A79B3 /* IPAddressRange.swift */; };
+		6F5FB78421A6EA9B0045F833 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F693A552179E556008551C1 /* Endpoint.swift */; };
+		6F5FB78521A6EA9B0045F833 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3E217F3413003482A3 /* DNSServer.swift */; };
+		6F5FB78621A6EA9B0045F833 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA5D942194454A0001E2F7 /* NETunnelProviderProtocol+Extension.swift */; };
 		6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
 		6F628C3F217F3413003482A3 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3E217F3413003482A3 /* DNSServer.swift */; };
 		6F628C41217F47DB003482A3 /* TunnelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */; };
@@ -774,6 +783,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5FB77E21A6EA9B0045F833 /* WireGuardPacketTunnelProvider.swift in Sources */,
+				6F5FB77F21A6EA9B0045F833 /* PacketTunnelSettingsGenerator.swift in Sources */,
+				6F5FB78021A6EA9B0045F833 /* DNSResolver.swift in Sources */,
+				6F5FB78121A6EA9B0045F833 /* ErrorNotifier.swift in Sources */,
+				6F5FB78221A6EA9B0045F833 /* Configuration.swift in Sources */,
+				6F5FB78321A6EA9B0045F833 /* IPAddressRange.swift in Sources */,
+				6F5FB78421A6EA9B0045F833 /* Endpoint.swift in Sources */,
+				6F5FB78521A6EA9B0045F833 /* DNSServer.swift in Sources */,
+				6F5FB78621A6EA9B0045F833 /* NETunnelProviderProtocol+Extension.swift in Sources */,
 				6FD1A2E721A5D9E000CF36EF /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
