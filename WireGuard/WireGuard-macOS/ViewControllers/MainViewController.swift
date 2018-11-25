@@ -16,10 +16,6 @@ class MainViewController: NSSplitViewController {
 
         self.title = "WireGuard"
 
-        // When resizing the window, the detail view should resize along with the window
-        detailSVI.holdingPriority = .defaultLow
-        masterSVI.holdingPriority = .defaultHigh
-
         self.addSplitViewItem(masterSVI)
         self.addSplitViewItem(detailSVI)
     }
