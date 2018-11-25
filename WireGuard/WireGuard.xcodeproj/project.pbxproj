@@ -187,7 +187,7 @@
 		6F919ED8218C65C50023B400 /* wireguard_doc_logo_320x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireguard_doc_logo_320x320.png; sourceTree = "<group>"; };
 		6F943C14219EFD11000C3485 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		6FD1A2CC21A59BE200CF36EF /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		6FD1A2D221A59E8700CF36EF /* WireGuard-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WireGuard-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD1A2D221A59E8700CF36EF /* WireGuard-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "WireGuard-macOS.app"; path = WireGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD1A2D421A59E8700CF36EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD1A2D621A59E8A00CF36EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD1A2DB21A59E8A00CF36EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -959,7 +959,7 @@
 				MTL_FAST_MATH = YES;
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_MACOS)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WireGuard;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-macOS/WireGuard-macOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -987,7 +987,7 @@
 				MTL_FAST_MATH = YES;
 				"OTHER_CFLAGS[arch=*]" = "-DNOCRYPT";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_ID_MACOS)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WireGuard;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "WireGuard-macOS/WireGuard-macOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
