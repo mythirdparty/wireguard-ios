@@ -11,6 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let mainVC = MainViewController()
         let window = NSWindow(contentViewController: mainVC)
+        window.delegate = self
 
         // Set main menu
         let mainMenu = MainMenu(applicationName: "WireGuard")
@@ -26,3 +27,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+extension AppDelegate: NSWindowDelegate {
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        // TODO: Check for unsaved changes
+        NSApp.terminate(self)
+        return true
+    }
+}
