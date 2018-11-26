@@ -18,13 +18,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.mainMenu = mainMenu
         self.mainMenu = mainMenu
 
+        mainMenu.onFileNewTunnelClicked = {
+            let tunnelEditVC = TunnelEditTableViewController()
+            mainVC.presentAsSheet(tunnelEditVC)
+        }
+
         // Auto-save window position and size
         window.windowController?.shouldCascadeWindows = false
         window.setFrameAutosaveName(NSWindow.FrameAutosaveName("MainWindow"))
 
         window.makeKeyAndOrderFront(self)
     }
-
 }
 
 extension AppDelegate: NSWindowDelegate {

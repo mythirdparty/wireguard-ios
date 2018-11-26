@@ -42,6 +42,7 @@
 		6F5FB78B21A6ECF70045F833 /* TunnelsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FB78A21A6ECF70045F833 /* TunnelsListTableViewController.swift */; };
 		6F5FB78F21AAD37C0045F833 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FB78E21AAD37C0045F833 /* Application.swift */; };
 		6F5FB79121AAD8260045F833 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FB79021AAD8260045F833 /* MainMenu.swift */; };
+		6F5FB79321AAE1690045F833 /* TunnelEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FB79221AAE1690045F833 /* TunnelEditTableViewController.swift */; };
 		6F628C3D217F09E9003482A3 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */; };
 		6F628C3F217F3413003482A3 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C3E217F3413003482A3 /* DNSServer.swift */; };
 		6F628C41217F47DB003482A3 /* TunnelDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F628C40217F47DB003482A3 /* TunnelDetailTableViewController.swift */; };
@@ -160,6 +161,7 @@
 		6F5FB78A21A6ECF70045F833 /* TunnelsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelsListTableViewController.swift; sourceTree = "<group>"; };
 		6F5FB78E21AAD37C0045F833 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		6F5FB79021AAD8260045F833 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		6F5FB79221AAE1690045F833 /* TunnelEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelEditTableViewController.swift; sourceTree = "<group>"; };
 		6F6081A821A6DDC60081DEBA /* WireGuard-macOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WireGuard-macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F61866A21AE73FF0072BB18 /* WireGuardNetworkExtension-macOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WireGuardNetworkExtension-macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F628C3C217F09E9003482A3 /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			children = (
 				6F5FB78821A6ECA80045F833 /* MainViewController.swift */,
 				6F5FB78A21A6ECF70045F833 /* TunnelsListTableViewController.swift */,
+				6F5FB79221AAE1690045F833 /* TunnelEditTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				6F4540F221A6D3EA00C30FF6 /* WgQuickConfigFileParser.swift in Sources */,
 				6F4540F321A6D3EA00C30FF6 /* WgQuickConfigFileWriter.swift in Sources */,
 				6F4540F421A6D3EA00C30FF6 /* Configuration.swift in Sources */,
+				6F5FB79321AAE1690045F833 /* TunnelEditTableViewController.swift in Sources */,
 				6F4540F521A6D3EA00C30FF6 /* IPAddressRange.swift in Sources */,
 				6F4540F621A6D3EA00C30FF6 /* Endpoint.swift in Sources */,
 				6F4540F721A6D3EA00C30FF6 /* DNSServer.swift in Sources */,
