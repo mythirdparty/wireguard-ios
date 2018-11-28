@@ -12,7 +12,7 @@ enum PacketTunnelProviderError: Error {
 }
 
 /// A packet tunnel provider object.
-class WireGuardPacketTunnelProvider: NEPacketTunnelProvider {
+class PacketTunnelProvider: NEPacketTunnelProvider {
 
     // MARK: Properties
 
